@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import computeraidedinstruction.*?>
+
+<AnchorPane maxHeight="599.0" maxWidth="835.0" prefHeight="500.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@StyleSheet.css">
+   <children>
+      <StackPane layoutX="-1.0" prefHeight="500.0" prefWidth="710.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="vBoxSpelling" prefHeight="512.0" prefWidth="708.0" spacing="10.0" style="-fx-background-color: #D9D9D9;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="189.0" prefWidth="785.0" style="-fx-border-width: 0 0 0.5em 0; -fx-border-color: linear-gradient( #D37639,yellow);">
+                     <children>
+                        <VBox prefHeight="172.0" prefWidth="518.0">
+                           <children>
+                              <HBox fx:id="helpScreenInput" alignment="CENTER" prefHeight="115.0" prefWidth="518.0">
+                                 <padding>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox fx:id="screenInput" alignment="CENTER" prefHeight="189.0" prefWidth="591.0" spacing="5.0" />
+                           </children>
+                        </VBox>
+                        <ImageView fx:id="imgDisplay" fitHeight="150.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="698.0" spacing="22.0">
+                     <children>
+                        <Button fx:id="btnMenu" mnemonicParsing="false" prefHeight="55.0" prefWidth="120.0" styleClass="menusBtn" />
+                        <Button fx:id="btnHelp" mnemonicParsing="false" prefHeight="55.0" prefWidth="120.0" styleClass="menusBtn" />
+                        <Button fx:id="btnSpeak" mnemonicParsing="false" prefHeight="55.0" prefWidth="120.0" styleClass="menusBtn" />
+                        <Button fx:id="btnPrev" mnemonicParsing="false"  prefHeight="55.0" prefWidth="120.0" styleClass="menusBtn" />
+                        <Button fx:id="btnNext" mnemonicParsing="false"  prefHeight="55.0" prefWidth="120.0" styleClass="menusBtn" />
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="238.0" prefWidth="708.0" spacing="5.0" style="-fx-border-color: linear-gradient( #D37639,yellow); -fx-border-width: 0 0 0.5em 0;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="675.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="btnQ" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="orangeBtn" text="Q">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnW" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="yellowBtn" text="W">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnE" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="greenBtn" text="E">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnR" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="blueBtn" text="R">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnT" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="purpleBtn" text="T">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnY" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="purpleBtn" text="Y">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnU" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="blueBtn" text="U">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnI" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="greenBtn" text="I">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnO" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="yellowBtn" text="O">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnP" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="orangeBtn" text="P">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="675.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="15.0" styleClass="blankBtn">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnA" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="orangeBtn" text="A">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnS" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="yellowBtn" text="S">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnD" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="greenBtn" text="D">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnF" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="blueBtn" text="F">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnG" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="purpleBtn" text="G">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnH" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="blueBtn" text="H">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnJ" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="greenBtn" text="J">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnK" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="yellowBtn" text="K">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnL" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="orangeBtn" text="L">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="15.0" styleClass="blankBtn">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="70.0" prefWidth="675.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="btnEraser" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="menusBtn" />
+                              <Button fx:id="btnZ" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="orangeBtn" text="Z">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnX" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="yellowBtn" text="X">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnC" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="greenBtn" text="C">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnV" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="blueBtn" text="V">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnB" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="blueBtn" text="B">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnN" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="greenBtn" text="N">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnM" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="yellowBtn" text="M">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnDash" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="orangeBtn" text="-">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Button fx:id="btnBackSpace" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="menusBtn">
+                                 <font>
+                                    <Font name="Cooper Black" size="30.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox fx:id="vBoxSelect" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="490.0" prefWidth="688.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="483.0" prefWidth="688.0" spacing="25.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="185.0" spacing="15.0">
+                                 <children>
+                                    <Button fx:id="btnAlphatbets" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Alphabets" />
+                                    <Button fx:id="btnBirds" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Birds" />
+                                    <Button fx:id="btnBodyParts" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Body Parts" />
+                                    <Button fx:id="btnColors" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Colors" />
+                                    <Button fx:id="btnDays" layoutX="34.0" layoutY="60.0" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Days" />
+                                    <Button fx:id="btnDomesticAnimals" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Domestic Animals" textOverrun="CLIP" />
+                                    <Button fx:id="btnFlowers" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Flowers" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="382.0" prefWidth="185.0" spacing="15.0">
+                                 <children>
+                                    <Button fx:id="btnFriuts" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Fruits" />
+                                    <Button fx:id="btnHomesObj" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Home's Object" textOverrun="CLIP" />
+                                    <Button fx:id="btnMonths" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Months" />
+                                    <Button fx:id="btnNumbers" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Numbers" />
+                                    <Button fx:id="btnOfficeObj" layoutX="10.0" layoutY="378.0" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Office's Object" />
+                                    <Button fx:id="btnShapes" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Shapes" />
+                                    <Button fx:id="btnTransportation" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Transportations" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="185.0" spacing="15.0">
+                                 <children>
+                                    <Button fx:id="btnVegetables" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Vegetables" />
+                                    <Button fx:id="btnWildAnimals" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Wild Animals" />
+                                    <Button fx:id="btnTwoLetters" layoutX="10.0" layoutY="378.0" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Two Letters" />
+                                    <Button fx:id="btnThreeLetters" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Three Letters" />
+                                    <Button fx:id="btnFourLetters" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Four Letters" />
+                                    <Button fx:id="btnFiveLetters" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Five Letters" />
+                                    <Button fx:id="btnSixLetters" minHeight="45.0" mnemonicParsing="false" prefWidth="185.0" styleClass="btnSelectMenus" text="Six Letters" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

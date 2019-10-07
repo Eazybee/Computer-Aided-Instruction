@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Created-By: 1.8.0_25-b18 (Oracle Corporation)
+Class-Path: lib/freetts.jar lib/cmu_time_awb.jar lib/cmu_us_kal.jar li
+ b/cmudict04.jar lib/cmulex.jar lib/cmutimelex.jar lib/en_us.jar lib/f
+ reetts-jsapi10.jar lib/mbrola.jar
+X-COMMENT: Main-Class will be added automatically by build
+Main-Class: computeraidedinstruction.ComputerAidedInstruction
+

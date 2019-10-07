@@ -1,0 +1,124 @@
+.orangeBtn{
+    -fx-background-color: linear-gradient(#F24F00,#E6B85B);   
+}
+.orangeBtn:pressed{
+    -fx-background-color: linear-gradient(#E6B85B,#F24F00);   
+    
+}
+.yellowBtn{
+    -fx-background-color: linear-gradient(yellow, #D37639);
+}
+.yellowBtn:pressed{
+    -fx-background-color: linear-gradient( #D37639,yellow);
+}
+.greenBtn{
+    -fx-background-color: linear-gradient(#457945,#56B952);
+}
+.greenBtn:pressed{
+    -fx-background-color: linear-gradient(#56B952,#457945);
+}
+.blueBtn{
+    -fx-background-color:linear-gradient(#6571B4,#323865);
+}
+.blueBtn:pressed{
+    -fx-background-color:linear-gradient(#323865,#6571B4);
+}
+.purpleBtn{
+    -fx-background-color: linear-gradient(#B0559F,#563C57);
+}
+.purpleBtn:pressed{
+    -fx-background-color: linear-gradient(#563C57,#B0559F);
+}
+.blankBtn{
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+}
+.menusBtn{
+    -fx-border-width: 0;
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    
+}
+.btnSelectMenus{
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    
+    -fx-alignment:CENTER;
+    -fx-font:bold 1.5em  "Cooper Black";
+    -fx-text-fill:white;
+}
+.btnSelectMenus:pressed{
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+.btnSelectMenusSight{
+    -fx-background-color: linear-gradient(#ffff00, #61a2b1,red);
+    -fx-border-width:  0 0 4 0;
+    -fx-alignment:CENTER;
+    -fx-font:bold 1.8em  "Cooper Black";
+    -fx-text-fill:white;
+}
+.lblInput, .lblhelp{
+    -fx-border-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-border-width:  0 0 4 0;
+    -fx-alignment:CENTER;
+    -fx-font:bold 2.5em  "Cooper Black";
+    -fx-text-fill:green;
+    
+}
+.lblInputRed{
+    -fx-text-fill:red;
+}
+.lblhelp{
+    -fx-border-width:  0 0 0 0;
+    -fx-font:bold 2em  "Cooper Black";
+}
+#btnEraser{
+    -fx-graphic:url("../img/menus/key_erase1.png");
+}
+#btnEraser:pressed{
+    -fx-graphic:url("../img/menus/key_erase1_press.png");
+}
+
+#btnBackSpace{
+    -fx-graphic:url("../img/menus/key_del1.png");
+}
+#btnBackSpace:pressed{
+    -fx-graphic:url("../img/menus/key_del1_press.png");
+}
+
+#btnMenu{
+    -fx-graphic:url("../img/menus/key_long1_menu.png");
+}
+#btnMenu:pressed{
+    -fx-graphic:url("../img/menus/key_long1_menu_press.png");
+}
+
+#btnHelp{
+    -fx-graphic:url("../img/menus/key_long1_help.png");
+}
+#btnHelp:pressed{
+    -fx-graphic:url("../img/menus/key_long1_help_press.png");
+}
+
+#btnSpeak{
+    -fx-graphic:url("../img/menus/key_long1_speak.png");
+}
+#btnSpeak:pressed{
+    -fx-graphic:url("../img/menus/key_long1_speak_press.png");
+}
+
+#btnPrev{
+    -fx-graphic:url("../img/menus/key_long1_prev.png");
+}
+#btnPrev:pressed{
+    -fx-graphic:url("../img/menus/key_long1_prev_press.png");
+}
+
+#btnNext{
+    -fx-graphic:url("../img/menus/key_long1_next.png");
+}
+#btnNext:pressed{
+    -fx-graphic:url("../img/menus/key_long1_next_press.png");
+}
+
+.button:hover{
+    -fx-opacity: 0.8;
+}
