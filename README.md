@@ -1,7 +1,7 @@
 # Computer Aided Instruction
 ![Computer Aided Instruction](https://i.imgur.com/i5DEsoD.png)
 
-This is a computer aided instruction program designed to help children learn spelling of english words.
+This is a computer-aided instruction program designed with a text-to-speech feature to help children learn the spelling of English words in a fun and interactive way.
 
 ## Getting Started
 
